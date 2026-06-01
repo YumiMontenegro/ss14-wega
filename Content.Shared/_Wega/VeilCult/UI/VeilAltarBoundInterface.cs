@@ -10,11 +10,11 @@ public enum VeilAltarUiKey : byte
 
 // Events
 [Serializable, NetSerializable]
-public sealed class VeilAltarSelectEnergyMessage : BoundUserInterfaceMessage
+public sealed partial class VeilAltarSelectEnergyMessage : BoundUserInterfaceMessage
 {
 }
 
 [Serializable, NetSerializable]
-public sealed class VeilAltarSelectOfferMessage : BoundUserInterfaceMessage
+public sealed partial class VeilAltarSelectOfferMessage : BoundUserInterfaceMessage
 {
 }

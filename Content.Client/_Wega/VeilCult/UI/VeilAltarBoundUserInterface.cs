@@ -3,7 +3,7 @@ using Robust.Client.UserInterface;
 
 namespace Content.Client._Wega.VeilCult.UI;
 
-public sealed class VeilAltarBoundUserInterface : BoundUserInterface
+public sealed partial class VeilAltarBoundUserInterface : BoundUserInterface
 {
     [ViewVariables]
     private VeilAltarMenu? _menu;

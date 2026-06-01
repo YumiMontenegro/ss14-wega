@@ -7,11 +7,11 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.Veil.Cult;
 
 // Events
-public sealed class VeilGodCalledEvent : EntityEventArgs
+public sealed partial class VeilGodCalledEvent : EntityEventArgs
 {
 }
 
-public sealed class VeilRitualConductedEvent : EntityEventArgs
+public sealed partial class VeilRitualConductedEvent : EntityEventArgs
 {
 }
 
@@ -125,7 +125,7 @@ public enum VeilBeaconUiKey : byte
 
 // STATES AND MESSAGES
 [Serializable, NetSerializable]
-public sealed class VeilBeaconNameBoundUserInterfaceState : BoundUserInterfaceState
+public sealed partial class VeilBeaconNameBoundUserInterfaceState : BoundUserInterfaceState
 {
     public string Name;
     public int MaxChars;
@@ -138,26 +138,26 @@ public sealed class VeilBeaconNameBoundUserInterfaceState : BoundUserInterfaceSt
 }
 
 [Serializable, NetSerializable]
-public sealed class VeilBeaconNameChangedMessage(string name) : BoundUserInterfaceMessage
+public sealed partial class VeilBeaconNameChangedMessage(string name) : BoundUserInterfaceMessage
 {
     public string Name { get; } = name;
 }
 
 [Serializable, NetSerializable]
-public sealed class TeleportEnchantDestinationMessage(NetEntity netEnt) : BoundUserInterfaceMessage
+public sealed partial class TeleportEnchantDestinationMessage(NetEntity netEnt) : BoundUserInterfaceMessage
 {
     public NetEntity NetEnt = netEnt;
 }
 
 [Serializable, NetSerializable]
-public sealed class VeilCultBeaconComponentState(string assignedName, int maxNameChars) : IComponentState // <-- Эт не ui тип, а к компонентам ближе
+public sealed partial class VeilCultBeaconComponentState(string assignedName, int maxNameChars) : IComponentState // <-- Эт не ui тип, а к компонентам ближе
 {
     public string AssignedName = assignedName;
     public int MaxNameChars = maxNameChars;
 }
 
 [Serializable, NetSerializable]
-public sealed class TeleportationEnchantBoundUserInterfaceState : BoundUserInterfaceState
+public sealed partial class TeleportationEnchantBoundUserInterfaceState : BoundUserInterfaceState
 {
     public HashSet<TeleportPoint> Warps;
 

@@ -35,16 +35,16 @@
   - type: NoSlip
   - type: IgnoreSpiderWeb
   - type: AntiGravityClothing
-  - type: CombatMode  
+  - type: CombatMode
   - type: VeilCultConstruct
   - type: MindContainer
   - type: PressureImmunity
   - type: ActiveRadio
     channels:
     - Binary
-  
+
   # Cogscarab
-  
+
 - type: entity
   name: cogscarab
   parent: SimpleMobBase
@@ -105,8 +105,9 @@
     baseWalkSpeed : 2.5
     baseSprintSpeed : 5
   - type: Damageable
-    damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: Inorganic
   - type: Destructible
     thresholds:
     - trigger:
@@ -144,12 +145,12 @@
   - type: ActiveRadio
     channels:
     - Binary
-    
+
 - type: startingGear
   id: MobCogscarabGear
   inhand:
   - OmnitoolUnremovable
-  
+
 
 - type: entity
   name: omnitool

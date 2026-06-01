@@ -24,8 +24,9 @@
     bodyType: Dynamic
   - type: VeilCultBeacon
   - type: Damageable
-    damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: Inorganic
   - type: Destructible
     thresholds:
     - trigger:
@@ -39,7 +40,7 @@
         spawn:
           SheetBrass:
             min: 0
-            max: 3  
+            max: 3
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Construction
@@ -62,8 +63,9 @@
     state: altar
     noRot: true
   - type: Damageable
-    damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: Inorganic
   - type: Destructible
     thresholds:
     - trigger:
@@ -100,7 +102,7 @@
   - type: Construction
     graph: VeilCultStructureAltarGraph
     node: VeilCultStructureAltar
-  
+
 - type: entity
   id: VeilCultClockworkLathe
   parent: BaseVeilCultStructure
@@ -160,7 +162,7 @@
   - type: Construction
     graph: VeilCultStructureLatheGraph
     node: VeilCultClockworkLathe
- 
+
 - type: entity
   parent: BaseStructure
   id: VeilCultPortal
@@ -188,8 +190,9 @@
     color: "#E39612"
   - type: NightLightBlocked # Corvax-Wega-NightLight
   - type: Damageable
-    damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
       - trigger:

@@ -103,6 +103,7 @@
   - type: MultiHandedItem
   - type: DeleteOnDrop
   - type: Damageable
+  - type: Injurable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
@@ -358,8 +359,9 @@
     size: Normal
   - type: Wieldable
   - type: Damageable
-    damageContainer: Inorganic
     damageModifierSet: Glass
+  - type: Injurable
+    damageContainer: Inorganic
   - type: Destructible
     thresholds:
     - trigger:
@@ -606,7 +608,7 @@
     enchants:
     - WeaponClockworkSwordSwordsmen
     - WeaponClockworkSwordBloodshed
-  
+
 - type: entity
   id: WeaponClockworkSwordBorg
   parent: BaseEnchantable
@@ -632,7 +634,7 @@
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
   - type: DisarmMalus
-  
+
 - type: entity
   id: WeaponClockHammer
   parent: BaseEnchantable
@@ -681,7 +683,7 @@
     enchants:
     - WeaponClockHammerKnockback
     - WeaponClockHammerCrusher
-    
+
 - type: entity
   parent: BaseEnchantable
   id: WeaponRatvarianSpear
@@ -742,7 +744,7 @@
     enchants:
     - WeaponRatvarianSpearElectricalTouch
     - WeaponRatvarianSpearConfusion
-        
+
 - type: entity
   parent: BaseItem
   id: VeilCultMidasTouch

@@ -4,7 +4,7 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.Veil.Cult.UI;
 
 [Serializable, NetSerializable]
-public sealed class EnchantSelectionState : BoundUserInterfaceState
+public sealed partial class EnchantSelectionState : BoundUserInterfaceState
 {
     public readonly List<EntProtoId> AvailableEnchants = new();
 
@@ -15,7 +15,7 @@ public sealed class EnchantSelectionState : BoundUserInterfaceState
 }
 
 [Serializable, NetSerializable]
-public sealed class EnchantSelectedMessage : BoundUserInterfaceMessage
+public sealed partial class EnchantSelectedMessage : BoundUserInterfaceMessage
 {
     public readonly EntProtoId EnchantId;
 

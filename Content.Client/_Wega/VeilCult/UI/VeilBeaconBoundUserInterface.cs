@@ -3,7 +3,7 @@ using Robust.Client.UserInterface;
 
 namespace Content.Client._Wega.VeilCult.UI;
 
-public sealed class VeilBeaconBoundUserInterface : BoundUserInterface
+public sealed partial class VeilBeaconBoundUserInterface : BoundUserInterface
 {
     [ViewVariables]
     private VeilBeaconWindow? _window;

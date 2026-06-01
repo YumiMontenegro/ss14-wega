@@ -6,7 +6,7 @@ using Robust.Client.UserInterface;
 namespace Content.Client._Wega.VeilCult.UI;
 
 [UsedImplicitly]
-public sealed class TeleportEnchantBoundUserInterface : BoundUserInterface
+public sealed partial class TeleportEnchantBoundUserInterface : BoundUserInterface
 {
     // Copy of TeleportLocationsUI for Teleportation enchantment
     [ViewVariables]

@@ -4,9 +4,9 @@ using Robust.Shared.GameStates;
 
 namespace Content.Shared.Veil.Cult;
 
-public sealed class VeilBeaconSystem : EntitySystem
+public sealed partial class VeilBeaconSystem : EntitySystem
 {
-    [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
+    [Dependency] private SharedUserInterfaceSystem _ui = default!;
 
     public override void Initialize()
     {

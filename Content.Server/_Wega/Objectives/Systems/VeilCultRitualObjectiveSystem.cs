@@ -6,9 +6,9 @@ using Content.Shared.Objectives.Components;
 
 namespace Content.Server.Objectives.Systems;
 
-public sealed class VeilCultRitualObjectiveSystem : EntitySystem
+public sealed partial class VeilCultRitualObjectiveSystem : EntitySystem
 {
-    [Dependency] private readonly VeilCultRuleSystem _veilCult = default!;
+    [Dependency] private VeilCultRuleSystem _veilCult = default!;
 
     public override void Initialize()
     {

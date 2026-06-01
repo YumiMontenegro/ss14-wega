@@ -6,7 +6,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Client._Wega.VeilCult.UI;
 
 [UsedImplicitly]
-public sealed class EnchantBoundUserInterface : BoundUserInterface
+public sealed partial class EnchantBoundUserInterface : BoundUserInterface
 {
     [ViewVariables]
     private EnchantWindow? _window;
