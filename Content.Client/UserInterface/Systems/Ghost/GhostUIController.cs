@@ -13,9 +13,9 @@ using Robust.Shared.Configuration; // Corvax-Wega-GhostRespawn
 namespace Content.Client.UserInterface.Systems.Ghost;
 
 // TODO hud refactor BEFORE MERGE fix ghost gui being too far up
-public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSystem>, IOnSystemChanged<GhostRespawnSystem> // Corvax-Wega-GhostRespawn
+public sealed partial class GhostUIController : UIController, IOnSystemChanged<GhostSystem>, IOnSystemChanged<GhostRespawnSystem> // Corvax-Wega-GhostRespawn
 {
-    [Dependency] private readonly IEntityNetworkManager _net = default!;
+    [Dependency] private IEntityNetworkManager _net = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!; // Corvax-Wega-GhostRespawn
     [Dependency] private readonly IConsoleHost _consoleHost = default!; // Corvax-Wega-GhostRespawn
 
